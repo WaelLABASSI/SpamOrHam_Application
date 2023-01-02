@@ -10,7 +10,7 @@ We use basic machine learning methods to build the spam detector and the Flask p
       => spam_ham_model.pkl & vectorizer.pkl
 
 2. Create a Flask application with a RESTful API - GET/POST Method
-    - /version_1/application.py  
+    - ./version_1/application.py  
 
 3. Launch an AWS EC2 instance(Virtual Server) using AWS Elastic Beanstalk
 
