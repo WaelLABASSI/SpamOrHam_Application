@@ -1,7 +1,7 @@
 # Deploy_ML_Model_into_cloud
 
-In this project, we build a spam detector using machine learning and launch it as a serverless API into AWS virtual servers.
-We use basic machine learning methods to build the spam detector and the Flask python framework to create the API.
+In this project, we build a spam detector using machine learning and launch it as a serverless API into AWS virtual servers.\
+We use basic machine learning methods to build the spam detector and the Flask python framework to create the API.\
 
 
 1. Build a Logistic Regression model to detect spams in sms messages
@@ -24,9 +24,9 @@ To connect to the application and create requests we use POSTMAN as API testor.
 ## Installation
 git clone https://github.com/WaelLABASSI/Deploy_ML_Model_into_cloud.git
 
-conda create -n py369 python=3.6.9
-conda activate py39
-cd Deploy_ML_Model_into_cloud
+conda create -n py369 python=3.6.9\
+conda activate py39\
+cd Deploy_ML_Model_into_cloud\
 pip install -r requirements_ML.txt
 
 ## Run in Notebook
