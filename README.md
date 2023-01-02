@@ -1,16 +1,16 @@
 # Deploy_ML_Model_into_cloud
 
 In this project, we build a spam detector using machine learning and launch it as a serverless API into AWS virtual servers.\
-We use basic machine learning methods to build the spam detector and the Flask python framework to create the API.\
+We use basic machine learning methods to build the spam detector and the Flask python framework to create the API.
 
 
 1. Build a Logistic Regression model to detect spams in sms messages
     - SpamDetector.ipynb
-    - Use Pickle to serialize and deserialize the trained model and the vectorizer function
+    - Use Pickle to serialize and deserialize the trained model and the vectorizer function\
       => spam_ham_model.pkl & vectorizer.pkl
 
 2. Create a Flask application with a RESTful API - GET/POST Method
-    - application.py  
+    - /version_1/application.py  
 
 3. Launch an AWS EC2 instance(Virtual Server) using AWS Elastic Beanstalk
 
@@ -33,7 +33,7 @@ pip install -r requirements_ML.txt
 SpamDetector.ipynb
 
 ## Datasets
-spam_train.csv: data used to train the model
+spam_train.csv: data used to train the model\
 spam_test.csv: data used to test the model
 
 
