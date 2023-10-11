@@ -35,7 +35,7 @@ Example of HAM sms: Hello there. How are you doing?
 
 Example of SPAM sms: you won $900 in the new lottery draw. Call +123456789.
 
-![image](https://github.com/WaelLABASSI/SpamOrHam_Application/SpamOrHamApplication.png)
+![image](SpamOrHamApplication.png)
 
 ## Credits
 COURSERA Project Network: Deploy Machine Learning Model into AWS Cloud Servers
