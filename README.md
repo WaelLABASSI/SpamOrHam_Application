@@ -9,7 +9,7 @@ I use basic Logistic Regression model to build the spam detector and the Flask p
     - Process SMS messages: Tokenizing & removing stop words & stemming
     - Vectorize the data before training & testing the model
     - Use Pickle to serialize and deserialize the trained model and the vectorizer function\
-      => ./version_1/spam_ham_model.pkl & vectorizer.pkl
+      => ./version_1/spam_ham_model.pkl & ./version_1/vectorizer.pkl
 
 2. Create a Flask application using basic HTML and CSS files
       => ./version_1/application.py  
@@ -34,6 +34,8 @@ python ./application.py
 Example of HAM sms: Hello there. How are you doing?
 
 Example of SPAM sms: you won $900 in the new lottery draw. Call +123456789.
+
+![image](https://github.com/WaelLABASSI/SpamOrHam_Application/SpamOrHamApplication.png)
 
 ## Credits
 COURSERA Project Network: Deploy Machine Learning Model into AWS Cloud Servers
