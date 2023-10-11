@@ -1,41 +1,41 @@
 # Deploy_ML_Model_into_cloud
 
-In this project, we build a spam detector using machine learning and launch it as a serverless API into AWS virtual servers.\
-We use basic machine learning methods to build the spam detector and the Flask python framework to create the API.
+In this project, I build a spam detector using machine learning and launch it as a serverless API into AWS virtual servers.\
+I use basic Logistic Regression model to build the spam detector and the Flask python framework to create the API.
 
-
-1. Build a Logistic Regression model to detect spams in sms messages
-    - SpamDetector.ipynb
+## Development Steps
+1. Build a Logistic Regression model to detect spams in sms messages: SpamDetector.ipynb
+    - Import datasets: spam_train.csv & spam_test.csv 
+    - Process SMS messages: Tokenizing & removing stop words & stemming
+    - Vectorize the data before training & testing the model
     - Use Pickle to serialize and deserialize the trained model and the vectorizer function\
-      => spam_ham_model.pkl & vectorizer.pkl
+      => ./version_1/spam_ham_model.pkl & ./version_1/vectorizer.pkl
 
-2. Create a Flask application with a RESTful API - GET/POST Method
-    - ./version_1/application.py  
+2. Create a Flask application using basic HTML and CSS files
+      => ./version_1/application.py  
 
-3. Launch an AWS EC2 instance(Virtual Server) using AWS Elastic Beanstalk
-
-4. Deploy Spam Detector API Flask application into AWS virtual servers
+3. Deploy the application into AWS virtual servers
     - Prepare the deployment file: Archive version_1 into .zip file
+    - Upload the source code to AWS Elastic Beanstalk
+    - Connect to the application using the returned URL
 
-5. Perform additional AWS Elastic Beanstalk actions: Application versioning, Server logs, Server performance monitoring & Terminate the server.
 
-To connect to the application and create requests we use POSTMAN as API testor.
+## Test Locally
+git clone https://github.com/WaelLABASSI/SpamOrHam_Application.git
 
-## Installation
-git clone https://github.com/WaelLABASSI/Deploy_ML_Model_into_cloud.git
+cd Deploy_ML_Model_into_cloud/version_1
 
-conda create -n py369 python=3.6.9\
-conda activate py39\
-cd Deploy_ML_Model_into_cloud\
-pip install -r requirements_ML.txt
+conda create -n envname--file requirements.txt
 
-## Run in Notebook
-SpamDetector.ipynb
+conda activate envname
 
-## Datasets
-spam_train.csv: data used to train the model\
-spam_test.csv: data used to test the model
+python ./application.py
 
+Example of HAM sms: Hello there. How are you doing?
+
+Example of SPAM sms: you won $900 in the new lottery draw. Call +123456789.
+
+![image](https://github.com/WaelLABASSI/SpamOrHam_Application/SpamOrHamApplication.png)
 
 ## Credits
 COURSERA Project Network: Deploy Machine Learning Model into AWS Cloud Servers
